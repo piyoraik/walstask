@@ -60,3 +60,80 @@ header li {
     font-size: 20px;
     color: #FAFAFA;
 }
+
+.box1 {
+    background-color: #ECEFF1;
+}
+
+.portfolio {
+    margin: 0 auto;
+    width: 920px;
+}
+
+.portfolio-box {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.portfolio-box h2 {
+    font-size: 32px;
+    color: #000000;
+}
+
+.portfolio-box h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px;
+    border-color: #EC715F;
+    width: 70px;
+    margin: 8px auto 0;
+}
+
+.portfolio-text {
+    padding-top: 30px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.portfolio-main {
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+.portfolio-img {
+    width: 300px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio-img:nth-child(3n) {
+    margin-right: 0;
+}
+
+.img1 {
+    background-image: url(img/sketch.jpg);
+}
+
+.img2 {
+    background-image: url(img/websuku.png);
+}
+
+.img3 {
+    background-image: url(img/write.jpg);
+}
+
+.img4 {
+    background-image: url(img/webcamp.png);
+}
+
+.img5 {
+    background-image: url(img/talk.jpg);
+}
+
+.img6 {
+    background-image: url(img/webcamp-mother.png);
+}
