@@ -207,3 +207,79 @@ header li {
     height: auto;
     float: left;
 }
+
+.profile-box {
+    background-color: #ECEFF1;
+}
+
+.profile {
+    width: 1024px;
+    /* height: 1200px; */
+    margin: 0 auto;
+    /* background-color: #ECEFF1; */
+    /* padding-bottom: 90px; */
+}
+
+.profile-title {
+    padding-top: 90px;
+    text-align: center;
+}
+
+.profile-title h2 {
+    /* text-align: center; */
+    color: #000000;
+    font-size: 32px;
+}
+
+.profile-title h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px;
+    border-color: #EC715F;
+    width: 70px;
+    margin: 8px auto 0;
+}
+
+.profile-p {
+    padding-top: 30px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.profile-main {
+    padding-top: 30px;
+    /* margin: 0 auto; */
+    padding-bottom: 90px;
+}
+
+.left {
+    width: 50%;
+    /* margin: 0 auto; */
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: left;
+}
+
+.profile-img {
+    background-image: url(img/my-icon.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-sub-title {
+    font-size: 20px;
+}
+
+.profile-sub-title:last-of-type{
+    padding-top: 20px;
+}
+
+.profile-sub-text {
+    font-size: 16px;
+    color: #000000;
+}
