@@ -7,30 +7,35 @@
         <title>WALS成果物</title>
     </head>
     <body>
+        <!-- ヘッダー -->
         <header>
             <div class="headerbox">
                 <img class="logo" src="img/logo.png" alt="ロゴ">
-                <nav>
+                <nav class="header-navi">
                     <ul class="clearfix">
-                        <li>Porfolio</li>
-                        <li>Feature</li>
-                        <li>Profile</li>
-                        <li>Contact</li>
+                        <li class="header-list">Porfolio</li>
+                        <li class="header-list">Feature</li >
+                        <li class="header-list">Profile</li>
+                        <li class="header-list">Contact</li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <!-- ヘッダーここまで -->
+        <!-- メインビジュアル -->
         <div class="main-visual">
            <section class="visual-box">
                <h2 class="mv-title">Lorem Ipsum</h2>
                <span class="mv-text">simply dummy text of the printhing</span>
            </section>
         </div>
-        <div class="box1">
-            <div class="portfolio">
-                <section class="portfolio-box">
-                    <h2>Portfolio</h2>
-                    <p class="portfolio-text">
+        <!-- メインビジュアルここまで -->
+        <!-- ポートフォリオ -->
+        <div class="porofolio">
+            <div class="portfolio-box">
+                <section class="header-box">
+                    <h2 class="header-title ">Portfolio</h2>
+                    <p class="header-text">
                         It is a long established fact that a reader will be distracted by the readable<br>
                         content of a page when looking at its layout.<br>
                         The point of using Lorem Ipsum is that is has more-or-less normal distribution of letters
@@ -46,17 +51,19 @@
                 </div>
             </div>
         </div>
+        <!-- ポートフォリオここまで -->
+        <!-- Feature -->
         <div class="feature">
-            <section class="feature-title">
-                <h2>Feature</h2>
-                <p class="feature-text">It is a long established fact that a reader will be distracted by the readable<br>
+            <section class="header-box">
+                <h2 class="header-title">Feature</h2>
+                <p class="header-text">It is a long established fact that a reader will be distracted by the readable<br>
                 content of a page when looking at its layout.<br>
                 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
             </section>
             <div class="feature-main clearfix">
-                <section class="feature1">
+                <section class="technology">
                     <i class="fas fa-code fa-text"></i>
-                    <h2 class="feature-h2">Title1</h2>
+                    <h2 class="feature-title">Title1</h2>
                     <p class="feature-p">
                     text,text,text,text,text,text,text,text,text,
                     text,text,text,text,text,text,text,text,text,
@@ -67,9 +74,9 @@
                     text,text,text,text,text,text,text,text,text,
                     </p>
                 </section>
-                <section class="feature1">
-                    <i class="fas fa-code fa-text"></i>
-                    <h2 class="feature-h2">Title1</h2>
+                <section class="technology">
+                    <i class="fas fa-terminal fa-text"></i>
+                    <h2 class="feature-title">Title1</h2>
                     <p class="feature-p">
                     text,text,text,text,text,text,text,text,text,
                     text,text,text,text,text,text,text,text,text,
@@ -79,11 +86,10 @@
                     text,text,text,text,text,text,text,text,text,
                     text,text,text,text,text,text,text,text,text,
                     </p>
-                    <p class="feature-p">
                 </section>
-                <section class="feature1">
-                    <i class="fas fa-code fa-text"></i>
-                    <h2 class="feature-h2">Title1</h2>
+                <section class="technology">
+                    <i class="fas fa-file-code fa-text"></i>
+                    <h2 class="feature-title">Title1</h2>
                     <p class="feature-p">
                     text,text,text,text,text,text,text,text,text,
                     text,text,text,text,text,text,text,text,text,
@@ -96,11 +102,13 @@
                 </section>
             </div>
         </div>
+        <!-- Featureここまで -->
+        <!-- Profile -->
         <div class="profile-box">
             <div class="profile">
-                <section class="profile-title">
-                    <h2>Profile</h2>
-                    <p class="profile-p">
+                <section class="header-box">
+                    <h2 class="header-title">Profile</h2>
+                    <p class="header-text">
                     It is a long established fact that a reader will be distracted by the readable<br>
                     content of a page when looking at its layout.<br>
                     The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters<br>
@@ -126,10 +134,12 @@
                 </div>
             </div>
         </div>
+        <!-- Profileここまで -->
+        <!-- Contact -->
         <div class="contact-box">
-            <section class="contact-header">
-                <h2>Contact</h2>
-                <p>
+            <section class="header-box">
+                <h2 class="header-title">Contact</h2>
+                <p class="header-text">
                     It is a long established fact that a reader will be distracted by the readable<br>
                     content of a page when looking at its layout.<br>
                     The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
@@ -146,7 +156,7 @@
                 </div>
                 <div class="contact-right">
                     <div class="sns clearfix">
-                        <h3>SNS</h3>
+                        <h3 class="sns-title">SNS</h3>
                         <i class="fab fa-facebook-square sns-text"></i>
                         <i class="fab fa-twitter-square sns-text"></i>
                         <i class="fab fa-instagram sns-text"></i>
@@ -154,8 +164,11 @@
                 </div>
             </div>
         </div>
+        <!-- Contactここまで -->
+        <!-- footer -->
         <footer>
-            <p>© 2017 WebCamp</p>
+            <p id="copyright">© 2017 WebCamp</p>
         </footer>
+        <!-- footerここまで -->
     </body>
 </html>

@@ -1,3 +1,4 @@
+/* 全体に適応 */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
     clear: both;
 }
 
+/* ヘッダー & ナビ */
 header {
     height: 70px;
     background-color: #EC715F;
@@ -20,11 +22,11 @@ header {
     margin: 0 auto;
 }
 
-header nav {
+.header-navi {
     float: right;
 }
 
-header li {
+.header-list {
     list-style: none;
     display: inline-block;
     color: #FAFAFA;
@@ -38,6 +40,7 @@ header li {
     height: 70px;
 }
 
+/* メインビジュアル */
 .main-visual {
     background-image: url(img/mv.png);
     background-size: cover;
@@ -61,32 +64,40 @@ header li {
     color: #FAFAFA;
 }
 
-.box1 {
-    background-color: #ECEFF1;
-}
-
-.portfolio {
-    margin: 0 auto;
-    width: 920px;
-}
-
-.portfolio-box {
+/* コンテンツ全体ヘッダー */
+.header-box {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 90px; 
 }
 
-.portfolio-box h2 {
+.header-title {
     font-size: 32px;
     color: #000000;
 }
 
-.portfolio-box h2::after {
+.header-title::after {
     display: block;
     content: "";
     border-bottom: solid 3px;
     border-color: #EC715F;
     width: 70px;
     margin: 8px auto 0;
+}
+
+.header-text {
+    padding-top: 30px;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* ポートフォリオ */
+.porofolio {
+    background-color: #ECEFF1;
+}
+
+.portfolio-box {
+    margin: 0 auto;
+    width: 920px;
 }
 
 .portfolio-text {
@@ -138,36 +149,11 @@ header li {
     background-image: url(img/webcamp-mother.png);
 }
 
+/* feature */
 .feature {
     background-color: #FFFFFF;
     width: 980px;
     margin: 0 auto;
-}
-
-.feature {
-    padding-top: 90px;
-    text-align: center;
-}
-
-.feature-title h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #000000;
-}
-
-.feature-title h2::after {
-    display: block;
-    content: "";
-    border-bottom: solid 3px;
-    border-color: #EC715F;
-    width: 70px;
-    margin: 8px auto 0;
-}
-
-.feature-text {
-    padding-top: 30px;
-    font-size: 16px;
-    color: #000000;
 }
 
 .feature-main {
@@ -179,7 +165,7 @@ header li {
     font-size: 60px;
 }
 
-.feature-h2 {
+.feature-title {
     font-size: 20px;
     color: #000000;
     padding: 10px 0;
@@ -190,74 +176,29 @@ header li {
     color: #000000;
 }
 
-.feature1 {
+.technology {
     width: 320px;
     height: auto;
     float: left;
+    text-align: center;
 }
 
-.feature2 {
-    width: 320px;
-    height: auto;
-    float: left;
-}
-
-.feature3 {
-    width: 320px;
-    height: auto;
-    float: left;
-}
-
+/* Profile */
 .profile-box {
     background-color: #ECEFF1;
 }
 
 .profile {
     width: 1024px;
-    /* height: 1200px; */
     margin: 0 auto;
-    /* background-color: #ECEFF1; */
-    /* padding-bottom: 90px; */
-}
-
-.profile-title {
-    padding-top: 90px;
-    text-align: center;
-}
-
-.profile-title h2 {
-    /* text-align: center; */
-    color: #000000;
-    font-size: 32px;
-}
-
-.profile-title h2::after {
-    display: block;
-    content: "";
-    border-bottom: solid 3px;
-    border-color: #EC715F;
-    width: 70px;
-    margin: 8px auto 0;
-}
-
-.profile-p {
-    padding-top: 30px;
-    font-size: 16px;
-    color: #000000;
 }
 
 .profile-main {
     padding-top: 30px;
-    /* margin: 0 auto; */
     padding-bottom: 90px;
 }
 
-.left {
-    width: 50%;
-    /* margin: 0 auto; */
-    float: left;
-}
-
+.left,
 .right {
     width: 50%;
     float: left;
@@ -284,42 +225,14 @@ header li {
     color: #000000;
 }
 
+/* Contact */
 .contact-box {
-    /* background-color: red; */
-}
-
-.contact {
     margin: 0 auto;
     width: 800px;
-}
-
-.contact-header {
-    text-align: center;
-    padding-top: 90px;
-}
-
-.contact-header h2 {
-    font-size: 32px;
-    color: #000000;
-}
-
-.contact-header h2::after {
-    display: block;
-    content: "";
-    border-bottom: solid 3px;
-    border-color: #EC715F;
-    width: 70px;
-    margin: 8px auto 0;
-}
-
-.contact-header p {
-    padding-top: 30px;
 }
 
 .contact-main {
     width: 800px;
-    margin: 0 auto;
-    /* background-color: red; */
     padding-top: 30px;
     padding-bottom: 90px;
 }
@@ -353,7 +266,7 @@ header li {
     margin: 0 auto;
 }
 
-.sns h3 {
+.sns-title {
     font-size: 20px;
     margin-bottom: 5px;
 }
@@ -364,6 +277,7 @@ header li {
     margin-right: 20px;
 }
 
+/* footer */
 footer {
     height: 60px;
     width: 100%;
@@ -371,7 +285,7 @@ footer {
     line-height: 60px;
 }
 
-footer p {
+#copyright {
     color: #FAFAFA;
     font-size: 16px;
     text-align: center;
