@@ -283,3 +283,83 @@ header li {
     font-size: 16px;
     color: #000000;
 }
+
+.contact-box {
+    /* background-color: red; */
+}
+
+.contact {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.contact-header {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.contact-header h2 {
+    font-size: 32px;
+    color: #000000;
+}
+
+.contact-header h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px;
+    border-color: #EC715F;
+    width: 70px;
+    margin: 8px auto 0;
+}
+
+.contact-header p {
+    padding-top: 30px;
+}
+
+.contact-main {
+    width: 800px;
+    margin: 0 auto;
+    /* background-color: red; */
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+.contact-left {
+    width: 50%;
+    float: left;
+}
+
+.mail {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.contact-left h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.contact-left h3:nth-child(2) {
+    padding-top: 20px;
+}
+
+.contact-right {
+    width: 50%;
+    float: left;
+}
+
+.sns {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sns h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sns-text {
+    font-size: 50px;
+    float: left;
+    margin-right: 20px;
+}
