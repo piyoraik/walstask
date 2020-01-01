@@ -35,6 +35,12 @@ header {
     font-size: 16px;
 }
 
+.header-list a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+
 .logo {
     width: auto;
     height: 70px;
@@ -96,7 +102,7 @@ header {
 }
 
 /* ポートフォリオ */
-.porofolio {
+#porofolio {
     background-color: #ECEFF1;
 }
 
@@ -112,8 +118,7 @@ header {
 }
 
 .portfolio-main {
-    padding-top: 30px;
-    padding-bottom: 90px;
+    padding: 30px 0 90px 0;
     margin: 0 auto;
 }
 
@@ -123,12 +128,15 @@ header {
     background-position: center;
     background-size: cover;
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 0
 }
 
 .portfolio-img:nth-child(3n) {
     margin-right: 0;
+}
+
+.portfolio-img:nth-child(n+4) {
+    margin-bottom: 0;
 }
 
 .img1 {
@@ -156,7 +164,7 @@ header {
 }
 
 /* feature */
-.feature {
+#feature {
     background-color: #FFFFFF;
     width: 980px;
     margin: 0 auto;
@@ -165,6 +173,7 @@ header {
 .feature-main {
     padding-top: 30px;
     padding-bottom: 90px;
+    margin: 0 auto;
 }
 
 .fa-text {
@@ -190,7 +199,7 @@ header {
 }
 
 /* Profile */
-.profile-box {
+#profile-box {
     background-color: #ECEFF1;
 }
 
@@ -233,7 +242,7 @@ header {
 }
 
 /* Contact */
-.contact-box {
+#contact-box {
     margin: 0 auto;
     width: 800px;
 }
@@ -284,6 +293,10 @@ header {
     margin-right: 20px;
 }
 
+.tell {
+    color: black;
+}
+
 /* footer */
 footer {
     height: 60px;
@@ -292,7 +305,7 @@ footer {
     line-height: 60px;
 }
 
-#copyright {
+.copyright {
     color: #FAFAFA;
     font-size: 16px;
     text-align: center;
@@ -394,14 +407,15 @@ footer {
         width: 90%;
     }
 
-    .left {
-        padding: 30px 0 20px;
-    }
-
     .left,
     .right{
         float: none;
-        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-sub-title:first-child {
+        margin: 20px 0 5px;
     }
 
     /* Contact */
@@ -414,10 +428,22 @@ footer {
         text-align: center;
     }
 
+    .mail-title {
+        margin-top: 20px;
+    }
+
     .contact-left,
     .contact-right{
         float: none;
         width: 100%;
+    }
+
+    .contact-left h3:nth-child(2) {
+        padding-top: 0px;
+    }
+
+    .sns-title {
+        margin-top: 20px;
     }
 
     .sns-text {

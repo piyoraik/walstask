@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name"viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width">
         <script src="https://kit.fontawesome.com/563473a8f7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <title>WALS成果物</title>
@@ -14,10 +14,10 @@
                 <img class="logo" src="img/logo.png" alt="ロゴ">
                 <nav class="header-navi">
                     <ul class="clearfix">
-                        <li class="header-list">Porfolio</li>
-                        <li class="header-list">Feature</li >
-                        <li class="header-list">Profile</li>
-                        <li class="header-list">Contact</li>
+                        <li class="header-list"><a href="#porofolio">Porfolio</a ></li>
+                        <li class="header-list"><a href="#feature">Feature</a></li >
+                        <li class="header-list"><a href="#profile-box">Profile</a></li>
+                        <li class="header-list"><a href="#contact-box">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="navi-resu ">
@@ -37,7 +37,7 @@
         </div>
         <!-- メインビジュアルここまで -->
         <!-- ポートフォリオ -->
-        <div class="porofolio">
+        <div id="porofolio">
             <div class="portfolio-box">
                 <section class="header-box">
                     <h2 class="header-title ">Portfolio</h2>
@@ -59,7 +59,7 @@
         </div>
         <!-- ポートフォリオここまで -->
         <!-- Feature -->
-        <div class="feature">
+        <div id="feature">
             <section class="header-box">
                 <h2 class="header-title">Feature</h2>
                 <p class="header-text">It is a long established fact that a reader will be distracted by the readable<br>
@@ -110,7 +110,7 @@
         </div>
         <!-- Featureここまで -->
         <!-- Profile -->
-        <div class="profile-box">
+        <div id="profile-box">
             <div class="profile">
                 <section class="header-box">
                     <h2 class="header-title">Profile</h2>
@@ -142,7 +142,7 @@
         </div>
         <!-- Profileここまで -->
         <!-- Contact -->
-        <div class="contact-box">
+        <div id="contact-box">
             <section class="header-box">
                 <h2 class="header-title">Contact</h2>
                 <p class="header-text">
@@ -154,10 +154,10 @@
             <div class="contact-main clearfix">
                 <div class="contact-left">
                     <div class="mail">
-                        <h3>Mail</h3>
-                        mail@example.com
-                        <h3>Tell</h3>
-                        000-0000-0000
+                        <h3 class="mail-title">Mail</h3 >
+                        <a class="tell" href="mailto:mail@example.com">mail@example.com</a>
+                        <h3 class="mail-title">Tell</h3 >
+                        <a class="tell" href="tel:000-0000-0000">000-0000-0000</a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -173,7 +173,7 @@
         <!-- Contactここまで -->
         <!-- footer -->
         <footer>
-            <p id="copyright">© 2017 WebCamp</p>
+            <p class="copyright">© 2017 WebCamp</p>
         </footer>
         <!-- footerここまで -->
     </body>
