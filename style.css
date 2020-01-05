@@ -189,6 +189,7 @@ header {
 .feature-p {
     font-size: 16px;
     color: #000000;
+    text-align: left;
 }
 
 .technology {
@@ -196,6 +197,11 @@ header {
     height: auto;
     float: left;
     text-align: center;
+    margin-right: 10px;
+}
+
+.technology:last-child {
+    margin-right: 0;
 }
 
 /* Profile */
@@ -230,10 +236,11 @@ header {
 
 .profile-sub-title {
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .profile-sub-title:last-of-type{
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .profile-sub-text {
@@ -248,7 +255,6 @@ header {
 }
 
 .contact-main {
-    width: 800px;
     padding-top: 30px;
     padding-bottom: 90px;
 }
@@ -260,25 +266,26 @@ header {
 
 .mail {
     margin: 0 auto;
-    width: 25%;
+    width: 130px
 }
 
-.contact-left h3 {
+.mail-title:first-child {
+    margin-top: 0px;
+}
+
+.mail-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
     font-size: 20px;
-    padding-bottom: 5px;
-}
-
-.contact-left h3:nth-child(2) {
-    padding-top: 20px;
 }
 
 .contact-right {
     width: 50%;
-    float: left;
+    float: right;
 }
 
 .sns {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -287,9 +294,12 @@ header {
     margin-bottom: 5px;
 }
 
+.sns-text:last-child {
+    margin-right: 0;
+}
+
 .sns-text {
     font-size: 50px;
-    float: left;
     margin-right: 20px;
 }
 
@@ -386,6 +396,10 @@ footer {
         float: none;
     }
 
+    .portfolio-img:nth-child(6) {
+        margin-top: 10px;
+    }
+
     .img1,
     .img3,
     .img5 {
@@ -393,13 +407,21 @@ footer {
     }
 
     /* feature */
-    .feature {
+    #feature {
         width: 90%;
     }
 
     .technology {
         float: none;
         margin: 30px auto 10px;
+    }
+
+    .technology:last-child {
+        margin-right: auto;
+    }
+
+    .feature-main {
+        padding-top: 0;
     }
 
     /* Profile */
@@ -419,7 +441,7 @@ footer {
     }
 
     /* Contact */
-    .contact-box {
+    #contact-box {
         width: 90%;
     }
 
@@ -427,7 +449,7 @@ footer {
         width: 100%;
         text-align: center;
     }
-
+    
     .mail-title {
         margin-top: 20px;
     }
